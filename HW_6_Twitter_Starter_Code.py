@@ -203,16 +203,15 @@ def find_most_common_cooccurring_hashtag(tweet_data, hashtag_to_ignore):
                 else:
                     hashtag_dict[tag] = 1
 
-    print(hashtag_dict)
     return max(hashtag_dict, key=hashtag_dict.get)
 
 
 
-    ''' Hint: In case you're confused about the hashtag_to_ignore 
-    parameter, we want to ignore the hashtag we queried because it would 
-    definitely be the most occurring hashtag, and we're trying to find 
-    the most commonly co-occurring hashtag with the one we queried (so 
-    we're essentially looking for the second most commonly occurring 
+    ''' Hint: In case you're confused about the hashtag_to_ignore
+    parameter, we want to ignore the hashtag we queried because it would
+    definitely be the most occurring hashtag, and we're trying to find
+    the most commonly co-occurring hashtag with the one we queried (so
+    we're essentially looking for the second most commonly occurring
     hashtags).'''
 
 
